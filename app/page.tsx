@@ -19,7 +19,7 @@ export async function AppxVideoPlayer({
 }) {
   // Get this from the appx api
   const auth_token = "";
-  const url = `https://harkiratapi.classx.co.in/get/fetchVideoDetailsById?course_id=${course_id}&video_id=${video_id}&ytflag=${1}&folder_wise_course=${1}`;
+  const url = `https://physicsheistprofessorapi.classx.co.in/get/fetchVideoDetailsById?course_id=${course_id}&video_id=${video_id}&ytflag=${1}&folder_wise_course=${1}`;
 
   const config = {
     url,
@@ -57,7 +57,7 @@ export async function LoginToAppX(
   username: string,
   password: string
 ): Promise<LoginToAppXResponse> {
-  const loginUrl = "https://harkiratapi.classx.co.in/post/userLogin";
+  const loginUrl = "https://physicsheistprofessorapi.classx.co.in/post/userLogin";
   const formData = new FormData();
   formData.append("phone", username);
   formData.append("email", username);
